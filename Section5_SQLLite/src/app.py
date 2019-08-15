@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restful import Resource, Api, reqparse
 from flask_jwt import JWT, jwt_required
-from src.security import authenticate, identity
+from Section5_SQLLite.src.security import authenticate, identity
 
 app = Flask(__name__)
 app.secret_key = 'artie'

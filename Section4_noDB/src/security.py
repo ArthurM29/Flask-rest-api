@@ -1,4 +1,4 @@
-from src.user import User
+from Section4_noDB.src.user import User
 from werkzeug.security import safe_str_cmp
 
 users = [
