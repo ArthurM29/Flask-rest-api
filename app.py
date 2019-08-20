@@ -13,12 +13,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # turn of Flask-SQLAlchemy
 app.secret_key = 'artie'
 api = Api(app)
 
-
-@app.before_first_request
-def create_tables():
-    db.create_all()
-
-
 jwt = JWT(app, authenticate, identity)  # creates new endpoint: /auth
 
 api.add_resource(Item, '/item/<string:name>')
