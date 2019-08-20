@@ -1,4 +1,4 @@
-from Section6_SqlAlchemy.src.db import db
+from src.db import db
 
 
 class ItemModel(db.Model):

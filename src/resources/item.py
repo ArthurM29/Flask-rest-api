@@ -1,6 +1,6 @@
 from flask_restful import Resource, reqparse
 from flask_jwt import jwt_required
-from Section6_SqlAlchemy.src.models.item import ItemModel
+from src.models.item import ItemModel
 
 
 class Item(Resource):

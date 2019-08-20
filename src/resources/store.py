@@ -1,7 +1,7 @@
 from flask_restful import Resource
 from flask_jwt import jwt_required
 
-from Section6_SqlAlchemy.src.models.store import StoreModel
+from src.models.store import StoreModel
 
 
 class Store(Resource):

@@ -1,5 +1,4 @@
-import sqlite3
-from Section6_SqlAlchemy.src.db import db
+from src.db import db
 
 
 class UserModel(db.Model):
