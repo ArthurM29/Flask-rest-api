@@ -1,11 +1,4 @@
-nums = [1, 2, 3]
+d = {'username': 'samo', 'password': 'asdf'}
 
-for n in nums:
-    if n == 2:
-        nums.remove(n)
-
-print(nums)
-
-nums.remove(55)
-
-print(nums)
+t = tuple(d.values())
+print(t)
