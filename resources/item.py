@@ -22,7 +22,7 @@ class Item(Resource):
     @jwt_required()
     def post(self, name):
         if ItemModel.find_by_name(name):
-            return {'message': f"An item with name {name} already exists"}, 400
+            return {'message': "An item with name {} already exists".format(name)}, 400
 
         payload = Item.parser.parse_args()
         item = ItemModel(name, payload['price'], payload['store_id'])
